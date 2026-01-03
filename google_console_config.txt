@@ -1,0 +1,27 @@
+IMPORTANT CONFIGURATION SETTINGS:
+
+Authorized Redirect URIs:
+
+Ensure it matches: https://YOUR_N8N_DOMAIN/rest/oauth2-combined/callback
+
+Ensure NO trailing slashes unless specified by n8n.
+
+OAuth Consent Screen:
+
+User Type: External (if allowing multiple outside users).
+
+Status: In Production (Testing mode tokens expire in 7 days).
+
+Scopes:
+
+../auth/gmail.readonly
+
+../auth/gmail.send
+
+../auth/drive.metadata.readonly
+
+../auth/drive.file
+
+n8n Credential Settings:
+
+Ensure "Auth URI Query Parameters" includes: access_type=offline&prompt=consent
